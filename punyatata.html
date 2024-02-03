@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search</title>
+
+    <style>
+        header{
+            background-color: antiquewhite;
+            padding: 30px;
+        }
+
+        header nav{
+            float :right;
+            background-color: rgb(244, 170, 232);
+            height: 60px;
+            width: fit-content;
+            line-height: 60px;
+        }
+        nav{
+            width: 300px;
+            height: 30px;
+            margin-bottom: 1px;
+        }
+
+        div.profile-picture{
+            height: 80px;
+            width: 80px;
+            border-radius: 40px;
+            background-color: red ;
+            margin-left: 1300px;
+            margin-bottom: 10px;
+
+            background-image: url(wew.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size :cover;
+
+
+        }
+        header div.profile-picture{
+            float: right;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            background-color: antiquewhite;
+            margin-left: 30px;
+        }
+
+        section.content h1{
+            font-size: 60px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        section :content
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box ;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-top: 200px;
+        }
+
+        form {
+            width: 800px;
+            /* background-color: yellowgreen; */
+            text-align: center;
+            margin: 0px auto;
+        }
+
+        form div {
+            display: inline-block;
+            border: 1px solid rgb(122, 171, 243);
+            padding: 5px 10px;
+            height: 36px;
+            border-radius: 18px;
+
+        }
+
+        form input[type=text] {
+            border: none;
+            outline: none;
+            width: 500px;
+        }
+
+    
+        form input[type=submit] {
+            height: 36px;
+            width: 36px;
+            border-radius: 18px;
+            background-color: rgb(253, 144, 228);
+            border: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width : 670px){
+            header nav{
+                float: left;
+            }
+            header nav a {
+                margin: 0 5px 0 0;
+                font-size: 9pt;
+            }
+            
+            header nav a.icon {
+                display: none;
+            }
+
+            section.content form{
+                width: 90%
+            }
+
+            section.content form input[type=text]{
+                width: 250px;
+            }
+
+            section.content form input[type=text]{
+                display : none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-picture"></div>
+        <nav>
+            <a herf="#">gmail</a>
+            <a herf="#">images</a>
+            <a herf="#" class="icon-search"></a>
+
+        </nav>
+    </header>
+    <h1><span style="color: rgb(175, 149, 243);">G</span>oogle</h1>
+    <form action="https://www.google.com/search" target="_blank">
+        <div>
+            <span class="icon-search">♥️</span>
+            <input type="text" name="q" id="" placeholder="Search here">
+        </div>
+        
+        <input type="submit" value="🩷">
+    </form>
+</body>
+    <nav></nav>
+    <div class="profile-picture"></div>
+    <div class="clear: right;"></div>
+</html>
